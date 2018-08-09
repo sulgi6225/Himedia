@@ -7,14 +7,18 @@
 
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style01.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:700" rel="stylesheet">
+    <!-- 글씨체:나눔고딕 -->
 
 </head>
 <body>
 	<header id="main_header">
+
+		<!-- 상단유틸메뉴영역 -->
 		<div id="main_gnb_wrap"> <!-- width:100% -->
 			<div id="main_gnb"> <!-- width:980px -->
-				<nav id="gnb"> <!-- 상단유틸메뉴 -->
-					<ul>
+				<nav id="gnb"> 
+					<ul class="clearfix">
 						<li><a href="#">Login</a></li>
 						<li><a href="#">Join</a></li>
 						<li><a href="#">Contack Us</a></li>
@@ -23,13 +27,41 @@
 				</nav>
 			</div>
 		</div>
+
+		<!-- 로고영역 -->
 		<div id="logo_wrap">
 			<h1>하이미디어</h1>
 			<div class="toggle">
 				<img src="toggle_btn01.jpg" alt="toggle button">
 			</div>
 		</div>
-	</header>
+
+		<!-- 메인메뉴영역 -->
+		<div id="main_lnb_wrap">
+			<div id="main_lnb">
+				<nav id="lnb">
+					<ul class="clearfix">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">제품소개</a></li>
+						<li><a href="#">사업영역</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">사회공헌</a></li>
+						<li><a href="#">인재채용</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header> <!-- 헤더 끝(유틸,로고,메인메뉴) -->
 	
+
+
+	<!-- 메인슬라이드영역 그림삽입 -->
+	<div id="visual_wrap">
+		<div class="visual">
+			<!--img01전구그림, img02넥스트에너지-->
+			<img src="visual_img01.png" class="img01">
+			<img src="visual_img02.png" class="img02">
+		</div>
+	</div>
 </body>
 </html>
