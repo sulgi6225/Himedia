@@ -1,13 +1,18 @@
 @charset "uft-8";
+*{box-sizing: border-box;}
+.clearfix:after{content:"";display: block;clear: both;}
+
 #main_header{width:100%;}
+
+
+/*유틸메뉴영역(로그인|조인|컨텍트어스|잉글리쉬)*/
 #main_gnb_wrap{width:100;
 			   border-bottom: 1px solid lightgray;
 			   height:30px;}
 #main_gnb{width:980px; margin:0 auto;
           /*background: #ccc*/;}
-#gnb{}
+
 #gnb>ul{float:right;}
-#gnb>ul:after{overflow:hidden;}
 #gnb>ul>li{display:table-cell;position:relative;}
 #gnb>ul>li>a{display: block;padding:0 10px;
 			line-height: 26px;height:26px;
@@ -18,11 +23,40 @@
 				    width:1px;height:15px;
 					position:absolute;
 					top:7px;left:-1px;}
+
 				    
+/*하이미디어 로고영역	(상단메인중앙)*/
 #logo_wrap{width:980px;margin:0 auto;
-		   position: relative;height:90px;
-		   padding-top:7px;}
-#logo_wrap>h1{width:250px;margin:0 auto;
-             color:steelblue;}
+		   position: relative;height:60px;
+		   padding-top:12px;}
+#logo_wrap>h1{text-align: center;font-weight: bold;
+              font-family: 'Nanum Gothic', sans-serif;}
+
+/*토굴버튼 이미지 클릭x*/
 #logo_wrap>div.toggle{position:absolute;
-					top:5px;right:0;}
+	   				top:5px;right:0;}
+
+
+/*상단메인메뉴영역*/
+#main_lnb_wrap{background: steelblue;}
+#main_lnb{width:980px;margin:0 auto;}
+#lnb>ul{width:100%;}
+#lnb>ul>li{float:left;width:16.66%;height:40px;
+			border-right:1px solid #73A1C7;}
+#lnb>ul>li:first-child{border-left:1px solid #73A1C7;}
+#lnb>ul>li>a{display: block;
+	height:40px;line-height: 40px;
+	text-align:center;
+	font-family: 'Nanum Gothic', sans-serif;}
+#lnb>ul>li>a:hover{color:white;font-weight:bold;}
+
+
+/*메인슬라이드영역 배경 및 그림삽입*/
+#visual_wrap{height:400px;
+	   background: #233a6a url(sky.jpg);
+	   background-repeat:no-repeat center;}
+#visual_wrap .visual{width:980px;margin:0 auto;
+					position:relative;}
+/*이미지01전구그림, 이미지02 넥스트에너지문구*/					
+#visual_wrap .img01{position:absolute;right:-50px;top:-20px;}
+#visual_wrap .img02{position:absolute;left:0;top:100px;}
