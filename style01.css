@@ -50,9 +50,18 @@
 	font-family: 'Nanum Gothic', sans-serif;}
 #lnb>ul>li>a:hover{color:white;font-weight:bold;}
 
+/*상단메인 드롭다운메뉴*/
+#main_lnb:hover .dropdown_menu{display: block;}
+
+.dropdown_menu{display: none;position: absolute;
+			background: white;opacity: 0.9;z-index: 1;
+			width:980px;}
+.dropdown_menu>ul{float: left;padding:10px 60.8px;}
+.dropdown_menu>ul>li{padding:3px 0;}
+
 
 /*메인슬라이드영역 배경 및 그림삽입*/
-#visual_wrap{height:400px;
+#visual_wrap{height:400px;overflow: hidden;
 	   background: #233a6a url(sky.jpg);
 	   background-repeat:no-repeat center;}
 #visual_wrap .visual{width:980px;margin:0 auto;
@@ -60,3 +69,70 @@
 /*이미지01전구그림, 이미지02 넥스트에너지문구*/					
 #visual_wrap .img01{position:absolute;right:-50px;top:-20px;}
 #visual_wrap .img02{position:absolute;left:0;top:100px;}
+
+
+/*중앙메인베너*/
+#main_section{background: #eeeeee;}
+#banner{width:980px;margin:0 auto;}
+#banner>ul{width:100%;height:200px;overflow: hidden;}
+#banner>ul>li{width:20%;float: left;}
+
+.card{width:100%;}
+.card img{display:block;margin:0 auto;padding-top:15px;}
+.card-body{padding:20px;text-align: center;color:white;}
+h3{padding-bottom:5px;}
+p{font-size:0.7em;}
+.first{background: #7c99b9;}
+.second{background: #4f74a1;}
+.third{background: #4b8ce0;}
+.forth{background: #3db5f3;}
+.fifth{background: #95c8ff;}
+
+.card:hover{opacity: 0.5}
+
+
+/*하단베너영역 1줄*/
+#main_article h3{color:#333333;}
+#main_article p{color:gray;}
+
+#main_article{width:980px;margin:0 auto;}
+#main_article>ul{overflow: hidden;}
+
+#main_article>ul>li{float:left;width:310px;
+	margin-right:25px;margin-top:20px;margin-bottom:20px;
+border:1px solid lightgray;}
+#main_article>ul>li:last-child{margin-right:0;float:right;}
+#main_article>ul>li .card-body{text-align: left; }
+.article .card-text{color:gray;
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;}
+/*하단베너영역 두번째줄*/
+.article_bottom img{float:right;
+width:44%;padding-right:10px;padding-top:15px;}
+.article_bottom div.card-body{float:left;width:56%;}
+.article_bottom p{margin-top: 10px;}	
+.article_bottom a{color:#4b8ce0;font-size: 13px}
+.article_bottom{margin-bottom: 25px}
+
+
+/*푸터영역*/
+#footer{width:100%;background: #4d4d4d;height:40px;}
+.subfooter_wrap{width:980px;margin:0 auto;}
+.subfooter_wrap div{display:table-cell;position:relative;}
+.subfooter_wrap a{padding-right:40px;height:13px;line-height:40px;
+			text-align:left;display:block;color:#a9a9a9;
+			font-size: 13px;}
+.subfooter_wrap>div>p{text-indent:-25px;color:#a9a9a9;}
+
+#main_footer_wrap{width:100%;height:100px;background: #5e5e5e;
+			position: relative;}
+.main_footer{width:980px;height:100px; margin:0 auto;}
+.footer_logo{width:160px;float: left}
+.main_footer h3{line-height:100px;font-weight: bold;
+              font-family: 'Nanum Gothic', sans-serif;
+             color:#ffffff;width:160px;display:block;}
+.footerinfo{width:820px;float: right;padding:12px 0;
+color:#a6a6a6}
+h4{padding-bottom: 5px;}
